@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro De Voluntários ANIMAPET</title>
+</head>
+<body>
+    <header>
+        <h1>ANIMAPET</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos Sociais</a></li>
+                <li><a href="cadastro.html">Quero ser Voluntário</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <figure>
+            <img src="imagem/image3.png" alt="Faça seu cadastro">
+        </figure>
+
+        <h1>Formulário de Cadastro de Voluntários</h1>
+
+        <form action="#" method="POST">
+
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+
+                <label for="cpf">CPF (000.000.000-00):</label>
+                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00"
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                title="Formato: 000.000.000-00" required>
+
+                <label for="telefone">Telefone ((00) 90000-0000)</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 90000-0000"
+                pattern="\(\d{2}\) \d{4,5}-\d{4}"
+                title="Formato: (00) 90000-0000" required>
+
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações de Endereço</legend>
+
+                <Label for="cep">CEP (00000-000):</Label>
+                <input type="text" id="cep" name="cep" placeholder="00000-000"
+                pattern="\d{5}-\d{3}"
+                title="Formato: 00000-000" required>
+
+                <label for="endereço">Endereço:</label>
+                <input type="text" id="endereço" name="endereço" placeholder="Rua, Avenida, Numero" required>
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="" disabled selected>Selecione seu Estado</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="BA">Bahia</option>
+                </select>
+            </fieldset>
+
+            <button type="submit">Cadastrar e Ser Voluntario</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ANIMAPET. Todos os direitos reservados.</p>
+        <address>Endereço: Rua Skyline, 1327- Nova Iguaçu, RJ- Telefone: (21) 98765-4321</address>
+
+    </footer>
+    
+</body>
+</html>
