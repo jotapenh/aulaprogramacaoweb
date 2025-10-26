@@ -1,10 +1,14 @@
-document.addEventListener('DOMContentLoaded' , () => {
+document.addEventListener('DOMContentLoaded', () => {
 
-const botaoMenu = document.querySelector('.menu-hamburguer');
+
+    const botaoMenu = document.querySelector('.menu-hamburguer');
 const menuPrincipal = document.querySelector('#menu-principal');
-botaoMenu.addEventListener('click' , () => {
+
+if (botaoMenu && menuPrincipal) {
+    botaoMenu.addEventListener('click' , () => {
     menuPrincipal.classList.toggle('aberto');
-});
+    });
+  }
 });
 
 const applyMask = (input, mask) => {
