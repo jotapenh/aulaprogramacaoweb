@@ -152,6 +152,11 @@ section {
 }
 
 .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-imagem {
     width: 100%;
     height: 150px;
     object-fit: cover;
@@ -216,7 +221,7 @@ figcaption {
     color: var(--cor-texto-principal);
 }
 
-.badge-sucess {
+.badge-success {
     background-color: var(--cor-sucesso);
     color: white;
 }
@@ -235,7 +240,7 @@ figcaption {
     font-size: var(--fonte-paragrafo);
 }
 
-.alert-sucess {
+.alert-success {
     background-color: #d4edda;
     color: #155724;
     border-color: var(--cor-sucesso);
@@ -247,7 +252,7 @@ figcaption {
     border-color: var(--cor-primaria-base);
 }
 
-.alerto-danger {
+.alert-danger {
     background-color: #f8d7da;
     color: #721c24;
     border-color: var(--cor-perigo);
@@ -333,8 +338,9 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 input[type="date"]:focus,
 select:focus {
-    border-color: #ffcc00;
+    border-color: var(--cor-secundaria);
     outline: none;
+    box-shadow: 0 0 0 2px var(--cor-primaria-clara);
 }
 
 input:invalid:not(:focus):not(:placeholder-shown) {
