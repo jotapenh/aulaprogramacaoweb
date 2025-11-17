@@ -1,35 +1,55 @@
-# aulaprogramacaoweb
-# [ANIMAPET] | Plataforma de Engajamento Social
+# PROJETO: PLATAFORMA WEB - ANIMAPET
 
-## 🚀 Sobre o Projeto
+## 📋 Descrição do Projeto
 
-Este projeto foi desenvolvido como requisito final da disciplina de Desenvolvimento Front-end no curso de Análise e Desenvolvimento de Sistemas (ADS). O objetivo foi criar uma plataforma web completa e profissional para ONGs, aplicando de forma integrada os conceitos das quatro unidades da disciplina.
+Este é o projeto final para a disciplina de Sistemas Web, desenvolvido para a Plataforma de Engajamento Social **ANIMAPET**. O objetivo é criar uma plataforma web completa e responsiva, focada em performance, acessibilidade (WCAG 2.1 Nível AA) e boas práticas de desenvolvimento (Design System, Versionamento GitFlow).
 
----
+O projeto é composto por três páginas principais:
+1. **Página Inicial (`index.html`):** Apresentação da ONG, missão e estatísticas.
+2. **Página de Projetos (`projetos.html`):** Detalhes dos projetos em andamento, utilizando layout em Grid.
+3. **Página de Cadastro (`cadastro.html`):** Formulário completo para voluntários com validação de dados.
 
-## ✅ Requisitos e Funcionalidades Implementadas
+## ✨ Requisitos Técnicos e Implementação
 
-A plataforma demonstra o domínio nas seguintes áreas:
+O projeto atende integralmente aos requisitos obrigatórios das Entregas I, II, III e IV.
 
-| Área | Requisito Cumprido | Demonstração |
-| :--- | :--- | :--- |
-| **HTML5** | **Estrutura Semântica** | Três páginas completas (`index.html`, `projetos.html`, `cadastro.html`) com uso de `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<figure>`, e `<address>`. |
-| **CSS3** | **Layout Responsivo** | Implementação de **CSS Media Queries**, garantindo a adaptação completa para dispositivos móveis (Mobile First). |
-| **JavaScript** | **Funcionalidades Dinâmicas** | **1. Menu Hambúrguer** interativo no mobile e **2. Máscara de Input em Tempo Real** (CPF e CEP) no formulário. |
-| **Validação** | **Profissional** | Validação nativa com `required`/`pattern` e melhoria da experiência com as máscaras JS. |
-| **Qualidade** | **Otimização e SEO** | Código validado pelo W3C, estrutura organizada, e **Meta Tags de SEO** adicionadas. |
-| **Entrega** | **Versionamento** | Projeto mantido no GitHub, seguindo metodologia profissional. |
+### 🎨 Design System (Entrega I)
 
----
+* **Paleta de Cores:** Implementada com 8 variáveis CSS (`:root`).
+* **Tipografia:** Implementada com 5 tamanhos de fonte variáveis.
+* **Espaçamento:** Implementado com 6 valores modulares (`rem`).
+* **Componentes:** Implementação de Badges, Alertas, Cards e Botões.
+
+### 📐 Layout e Responsividade (Entrega II)
+
+* **Layout:** Utilização de **CSS Grid** e **Flexbox** para o layout principal (Header, Main, Footer).
+* **Responsividade:** Implementação de **Media Queries** para adaptação em dispositivos móveis (Mobile-First).
+
+### ⚙️ Funcionalidades e Validação (Entrega III)
+
+* **Validação de Formulário:** Validação de todos os campos do `cadastro.html` usando atributos HTML5 e pseudo-classes CSS (`:valid`, `:invalid`).
+* **JavaScript:** Implementação de lógica JS para o menu *dropdown* e funcionalidade do *menu-hamburguer* em telas menores.
+
+### 🔒 Acessibilidade e Versionamento (Entrega IV)
+
+* **Acessibilidade (WCAG 2.1 AA):**
+    * Garantia de **Contraste Mínimo (4.5:1)**.
+    * Implementação de **Navegação por Teclado** (`:focus` em links e botões).
+    * Implementação de **Modo Escuro Acessível** via `@media (prefers-color-scheme: dark)`.
+* **Versionamento:**
+    * Estratégia **GitFlow** (Branches `main`, `develop`, `feature/*`).
+    * Histórico de **Commits Semânticos** (`feat`, `fix`, `chore`).
+* **Otimização para Produção:**
+    * **Minificação:** Remoção de espaços e quebras de linha no HTML.
+    * **Compressão de Imagens:** Conceito configurado (simulando otimização de arquivos na pasta `imagem/`).
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **HTML5:** Estrutura e Semântica
-* **CSS3:** Estilização, Flexbox e Media Queries
-* **JavaScript (ES6):** Interatividade e Manipulação do DOM
+* HTML5
+* CSS3 (Variáveis CSS, Grid, Flexbox, Media Queries)
+* JavaScript
 
----
+## 👤 Desenvolvedor
 
-## 🧑‍💻 Autor(es)
-
-| João Pedro Nunes da Hora | Matrícula (46095683) |
+* **Nome:** João Pedro Nunes Da Hora
+* **RGM:** 46095683
