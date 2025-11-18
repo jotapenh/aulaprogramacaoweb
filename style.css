@@ -5,13 +5,13 @@
 }
 
 :root {
-    --cor-primaria-base: #007bff;
+    --cor-primaria-base: #0056b3;
     --cor-primaria-clara: #e6f2ff;
     --cor-secundaria: #ffc107;
     --cor-sucesso: #28a745;
     --cor-perigo: #dc3545;
     --cor-neutra-clara: #f8f9fa;
-    --cor-texto-principal: #343a40;
+    --cor-texto-principal: #212529;
     --cor-borda: #dee2e6;
 
     --fonte-familia: 'Arial', sans-serif;
@@ -54,7 +54,7 @@ ul {
 }
 
 header {
-    background-color: #004d99;
+    background-color: var(--cor-primaria-base);
     color: white;
     padding: 20px 5%;
     display: flex;
@@ -81,8 +81,11 @@ nav a {
     padding: 5px 0;
 }
 
-nav a:hover {
-    color: #ffcc00;
+nav a:hover,
+nav a:focus {
+    color: var(--cor-secundaria);
+    outline: 2px solid var(--cor-secundaria);
+    outline-offset: 2px;
 }
 
 .menu-item-dropdown {
@@ -370,8 +373,9 @@ button[type="submit"] {
 button[type="submit"]:hover ,
 .botao-acao:focus,
 button[type="submit"]:focus {
-    background-color: #0056b3;
-    outline: none;
+    background-color: #004488;
+    outline: 3px solid var(--cor-secundaria);
+    outline-offset: 2px;
 
 }
 
@@ -475,5 +479,46 @@ button[type="submit"]:disabled {
     main {
         max-width: 1400px;
         margin: var(--esp-xxl) auto;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cor-neutra-clara: #000000;
+        --cor-texto-principal: #ffffff;
+        --cor-fundo-elemento: #121212;
+        --cor-borda: #444444;
+        --cor-primaria-base: #4a90e2;
+    }
+    body {
+        background-color: var(--cor-fundo-elemento);
+    }
+    header {
+        background-color: var(--cor-fundo-elemento);
+        border-bottom: 1px solid var(--cor-borda);
+    }
+    main,
+    .card {
+        background-color: var(--cor-fundo-elemento); 
+        color: var(--cor-texto-principal);
+        border: 1px solid var(--cor-borda);
+    }
+    footer {
+        background-color: var(--cor-fundo-elemento);
+        border-top: 1px solid var(--cor-borda);
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+        background-color: #222222;
+        color: var(--cor-texto-principal);
+        border: 1px solid var(--cor-borda);
+    }
+    .botao-acao {
+        background-color: var(--cor-primaria-base);
+        color: var(--cor-texto-principal); 
     }
 }
